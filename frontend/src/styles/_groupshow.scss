@@ -1,40 +1,32 @@
 $link: $grey-dark;
 @import "~bulma/bulma.sass";
-
 .GroupShow {
-  margin: 0 5%;
-
-  .hero {
-    figure {
-      margin: 0;
-      width: 100%;
+  .hero-body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .title-logo {
+      font-family: 'Amatic SC', cursive;
+      font-size: 100px;
+      text-shadow: 0 0 10px #000000;
+      color: #ffffff;
     }
   }
-
-    button, Link, a {
-      font-family: 'Amatic SC', cursive;
-    }
-    button:focus {
-      color: rgba(62, 65, 62, 1);
-    }
-  
-
-  .Information {
-    h1 {
-      font-family: 'Amatic SC', cursive;
-      text-align: center;
-      font-size: 40px;
-    }
-
-    
-    p {
-      font-family: 'Amatic SC', cursive;
-      font-size: 28px;
-    }
+  .group-title {
+    font-family: "Amatic SC", cursive;
+    font-size: 30px;
   }
-
+  .group-show-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .group-show-button {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+  }
 }
-
 section.EventNew.section, .EventEdit.section {
   height: 94.25vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.185), rgba(0, 0, 0, 0.198)),
@@ -42,8 +34,6 @@ section.EventNew.section, .EventEdit.section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-
   h1 {
     font-family: 'Amatic SC', cursive;
     text-align: center;
@@ -57,7 +47,6 @@ section.EventNew.section, .EventEdit.section {
     @media (max-width: 400px) {
       width: 95%;
     }
-
     button {
       font-family: "Amatic SC", cursive;
       background-color: rgba(49, 43, 43, 0.109);
@@ -69,5 +58,17 @@ section.EventNew.section, .EventEdit.section {
       }
     }
   }
-
+}
+@media only screen and (max-width: 600px) {
+  .GroupShow {
+    .hero-body {
+      .title-logo {
+      font-size: 50px;
+      }
+    }
+    .group-show-buttons {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
 }

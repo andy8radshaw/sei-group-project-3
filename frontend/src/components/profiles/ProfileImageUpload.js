@@ -2,9 +2,9 @@ import React from 'react'
 
 import {profileImageUpload} from '../../lib/api'
 
-const uploadUrl = 'https://api.cloudinary.com/v1_1/dx8pt11io/image/upload'
+const uploadUrl = process.env.REACT_APP_IMAGE_UPLOAD_URL
 
-const uploadPreset = 'hfkccfsc'
+const uploadPreset = process.env.REACT_APP_IMAGE_UPLOAD_PRESET
 
 class ProfileImageUpload extends React.Component {
   state = {

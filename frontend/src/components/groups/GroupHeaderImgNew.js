@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
-const uploadUrl = 'https://api.cloudinary.com/v1_1/dfeirxlea/image/upload'
-const uploadPreset = 'ydhktetw'
+const uploadUrl = process.env.REACT_APP_IMAGE_UPLOAD_URL
+const uploadPreset = process.env.REACT_APP_IMAGE_UPLOAD_PRESET
 
 class GroupHeaderImgNew extends React.Component {
   state = {

@@ -42,7 +42,7 @@ class GroupEventEdit extends React.Component {
       let obj = {value: '', label: ''}
       obj.value = hike._id
       obj.label = hike.name
-      options.push(obj)
+      return options.push(obj)
     })
     return options
   }

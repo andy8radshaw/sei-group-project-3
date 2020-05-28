@@ -547,7 +547,7 @@ module.exports = [
     country: 'France',
     lat: 46.0558,
     lon: 6.7764,
-    images: ['https://lh3.googleusercontent.com/proxy/K06CTuywntd2YkhHCZ-M4XnS-RsbwmYb2Fy4I33Gp_-Ua_uJeMxoyu-edC5OchVwsU115WD5GMLbcjMTHHGYF9mJtiodhht36Mjno3Vxxj98PSKG3jDvT7iGFD0', 'https://www.randos-montblanc.com/wp-content/gallery/sixt-fer-a-cheval/2017-Sixt-Fer-A-Cheval-9030062.jpg' ],
+    images: ['https://www.samoens.com/wp-content/uploads/2019/08/Panorama-Cirque-du-Fer-%C3%A0-Cheval-1200x480.jpg', 'https://www.randos-montblanc.com/wp-content/gallery/sixt-fer-a-cheval/2017-Sixt-Fer-A-Cheval-9030062.jpg' ],
     timeToComplete: '3-4 hours',
     distance: '5-10km',
     seasons: ['spring', 'summer', 'autumn']

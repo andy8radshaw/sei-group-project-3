@@ -6,7 +6,7 @@ const { dbURI } = require('../config/environment')
 const hikeData = require('./data/hikes')
 const groupData = require('./data/groups')
 
-const faker = require('faker')
+// const faker = require('faker')
 
 mongoose.connect(
   dbURI,
@@ -78,19 +78,19 @@ mongoose.connect(
         }
       ]
 
-      for (let i = 0; i < 100; i++) {
-        const name = faker.name.findName()
-        const image = faker.image.avatar()
-        users.push({
-          username: name.split(' ')[0].toLowerCase(),
-          email: `${name.split(' ').join('').toLowerCase()}@email.com`,
-          password: 'pass',
-          passwordConfirmation: 'pass',
-          fullName: name,
-          profileImage: image
+      // for (let i = 0; i < 100; i++) {
+      //   const name = faker.name.findName()
+      //   const image = faker.image.avatar()
+      //   users.push({
+      //     username: name.split(' ')[0].toLowerCase(),
+      //     email: `${name.split(' ').join('').toLowerCase()}@email.com`,
+      //     password: 'pass',
+      //     passwordConfirmation: 'pass',
+      //     fullName: name,
+      //     profileImage: image
 
-        })
-      }
+      //   })
+      // }
 
 
       const createdUsers = await User.create(users)

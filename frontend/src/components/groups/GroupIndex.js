@@ -16,8 +16,6 @@ class GroupIndex extends React.Component {
     }
   }
   render() {
-    console.log(this.state)
-
     const { groups } = this.state
     if (!groups) return null
 

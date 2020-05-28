@@ -2,7 +2,6 @@ import React from 'react'
 import axios from 'axios'
 import { getToken } from '../../lib/auth'
 import Select from 'react-select'
-
 class GroupEventNew extends React.Component {
   state = {
     formData : {
@@ -15,7 +14,6 @@ class GroupEventNew extends React.Component {
     errors: {},
     hikes: ['']
   }
-
   async componentDidMount() {
     try {
       const hikes = await axios.get('/api/hikes')
@@ -25,29 +23,25 @@ class GroupEventNew extends React.Component {
       this.setState({ errors: err })
     }
   }
-
   handleChange = event => {
     const formData = { ...this.state.formData, [event.target.name]: event.target.value }
     this.setState({ formData })
   }
-
   handleHikeOptions = () => {
     let options = []
-    this.state.hikes.map( hike => {
+    this.state.hikes.map(hike => {
       let obj = {value: '', label: ''}
       obj.value = hike._id
       obj.label = hike.name
-      options.push(obj)
+      return options.push(obj)
     })
     return options
   }
-
   handleHikeChange = selected => {
     // const selectedItems = selected ? selected.map(item => item.value) : []
     const formData = { ...this.state.formData, hike: selected.value }
     this.setState({ formData })
   }
-  
   handleClear = () => {
     const formData = {
       eventName: '', 
@@ -58,14 +52,11 @@ class GroupEventNew extends React.Component {
     }
     this.setState({ formData })
   }
-
   handleSubmit = async event => {
     event.preventDefault()
-
     const groupId = this.props.match.params.id
     const formData = { ...this.state.formData }
     this.setState({ formData })
-
     try {
       await axios.post(`/api/groups/${groupId}/events`, formData, {
         headers: { Authorization: `Bearer ${getToken()}` }
@@ -76,7 +67,6 @@ class GroupEventNew extends React.Component {
       this.setState({ errors: err })
     }
   }
-
   render() {
     console.log(this.props)
     console.log(this.state)
@@ -94,8 +84,7 @@ class GroupEventNew extends React.Component {
             <div className="Event-entire-field" style={{ height: "55vh", 
       overflow: "auto" }}>
               <div className="field field-margin">
-                <label className="label">Event Name*:</label>
-    
+                <label className="label">Event Name:</label>
                   <div className="control">
                     <input
                       className={`input ${!this.state.errors.eventName ?  '' : 'is-danger'}`}
@@ -107,10 +96,8 @@ class GroupEventNew extends React.Component {
                     />
                  </div>
               </div>
-              
-
                 <div className="field field-margin">
-                <label className="label">From*:</label>
+                <label className="label">From:</label>
                   <div className="control">
                     <input
                       className={`input ${!this.state.errors.startDate ?  '' : 'is-danger'}`}
@@ -122,9 +109,8 @@ class GroupEventNew extends React.Component {
                     />
                   </div>
                 </div>
-
                 <div className="field field-margin">
-                  <label className="label">To*:</label>
+                  <label className="label">To:</label>
                   <div className="control">
                     <input
                       className={`input ${!this.state.errors.startDate ?  '' : 'is-danger'}`}
@@ -136,9 +122,8 @@ class GroupEventNew extends React.Component {
                     />
                   </div>
                 </div>
-
                 <div className="field field-margin">
-                <label className="label">Description*:</label>
+                <label className="label">Description:</label>
                   <div className="control">
                       <textarea 
                         className="textarea" 
@@ -149,7 +134,6 @@ class GroupEventNew extends React.Component {
                       />
                   </div>
                 </div>
-
                 <div className="field">
                 <label className="label">Hike:</label>
                   <div className="control">
@@ -161,7 +145,6 @@ class GroupEventNew extends React.Component {
                     />
                   </div>
                 </div>
-
                 <div className="buttons is-right">
                   <button 
                     type='submit'
@@ -177,11 +160,9 @@ class GroupEventNew extends React.Component {
                 </div>
           </form>
         </div>
-     
         </div>
       </section>
     )
   }
 }
-
 export default GroupEventNew
