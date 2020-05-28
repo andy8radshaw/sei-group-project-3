@@ -169,7 +169,7 @@ class HikeShow extends React.Component {
       <div className="HikeShow box">
         <div className="hero is-medium is-success">
           <div className="hero-body" style={{ backgroundImage: `url(${hike.images[0]})` }}>
-            <h1 className="title-logo">{hike.name}, {hike.country}</h1>
+            <h1 className="title-logo">{hike.name}</h1>
           </div>
         </div>
         <div className="box">
@@ -203,7 +203,7 @@ class HikeShow extends React.Component {
 
           <section className="hike-show-buttons">
             <div className="buttons has-addons">
-              <button className="button hike-show-button is-success is-light" onClick={this.handleImageModal}>Image Gallery</button>
+              <button className="button hike-show-button is-warning is-light" onClick={this.handleImageModal}>Image Gallery</button>
               {isAuthenticated() && <button className="button hike-show-button is-primary is-light" onClick={this.handleImageUploadActive}>Add an image to the gallery</button>}
 
               {isAuthenticated() && !this.state.hikeIsFav &&

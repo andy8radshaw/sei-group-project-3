@@ -1,19 +1,16 @@
-
-
-
-.Home {  
-.hero-body {
-    background-image: url('https://images.unsplash.com/photo-1536334916155-dd9f850d6d73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80');
+.Home {
+  .hero-body {
+    background-image: url("https://images.unsplash.com/photo-1536334916155-dd9f850d6d73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .title-logo {
-    font-family: 'Amatic SC', cursive;
+    font-family: "Amatic SC", cursive;
     font-size: 150px;
     text-shadow: 0 0 10px #000000;
   }
-  .search-section{
+  .search-section {
     display: flex;
     flex-direction: row;
     .searchbar {
@@ -23,16 +20,14 @@
   }
 }
 
-
-
 .HikesIndex {
   .hero-body {
-    background-image: url('https://images.unsplash.com/photo-1536334916155-dd9f850d6d73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80');
+    background-image: url("https://images.unsplash.com/photo-1536334916155-dd9f850d6d73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     .title-logo {
-      font-family: 'Amatic SC', cursive;
+      font-family: "Amatic SC", cursive;
       font-size: 150px;
       text-shadow: 0 0 10px #000000;
       color: #ffffff;
@@ -42,7 +37,7 @@
     object-fit: cover;
   }
   .hike-index-title {
-    font-family: 'Amatic SC', cursive;
+    font-family: "Amatic SC", cursive;
     font-size: 30px;
   }
   .index-search {
@@ -56,11 +51,11 @@
   .is-hidden {
     display: none;
   }
-.HikeMap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .HikeMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .map-pin {
     font-size: 20px;
   }
@@ -69,7 +64,7 @@
   }
   .small-popup {
     h1 {
-      font-family: 'Amatic SC', cursive;
+      font-family: "Amatic SC", cursive;
       font-size: 16px;
     }
     h2 {
@@ -83,17 +78,17 @@
     }
     img {
       display: none;
-    } 
+    }
   }
   .large-popup {
     width: 300px;
     padding: 15px;
     h1 {
-      font-family: 'Amatic SC', cursive;
+      font-family: "Amatic SC", cursive;
       font-size: 28px;
     }
     h2 {
-      font-family: 'Amatic SC', cursive;
+      font-family: "Amatic SC", cursive;
       font-size: 28px;
     }
     h3 {
@@ -101,7 +96,7 @@
       margin-bottom: 10px;
     }
     p {
-      font-family: 'Amatic SC', cursive;
+      font-family: "Amatic SC", cursive;
       color: #04d18d;
       font-size: 20px;
     }
@@ -111,13 +106,13 @@
       align-items: center;
       padding: 10px;
       img {
-      height: 120px;
+        height: 120px;
         width: 240px;
-      } 
+      }
     }
   }
   .map-controls {
-  position: absolute;
+    position: absolute;
   }
 }
 
@@ -127,14 +122,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     .title-logo {
-      font-family: 'Amatic SC', cursive;
+      font-family: "Amatic SC", cursive;
       font-size: 100px;
       text-shadow: 0 0 10px #000000;
       color: #ffffff;
     }
   }
   .hikr-title {
-    font-family: 'Amatic SC', cursive;
+    font-family: "Amatic SC", cursive;
     font-size: 30px;
   }
   .hike-show-buttons {
@@ -144,24 +139,34 @@
     align-items: flex-start;
   }
   .hike-show-button {
-    font-family: 'Amatic SC', cursive;
+    font-family: "Amatic SC", cursive;
     font-size: 20px;
   }
   .popup-text {
-      font-family: 'Amatic SC', cursive;
-      font-size: 26px;
+    font-family: "Amatic SC", cursive;
+    font-size: 26px;
   }
- .review-info {
-   display: flex;
-   
- }
+  .review-info {
+    display: flex;
+  }
+  
+}
+
+
+// .modal-content {
+//   width: 80vw;
+// }
+.hike-show-image {
+  // max-height: 80vh;
+  // max-width: 80vw;
+  object-fit: contain;
 }
 
 @media only screen and (max-width: 600px) {
   .HikeShow {
     .hero-body {
       .title-logo {
-      font-size: 50px;
+        font-size: 50px;
       }
     }
     .hike-show-buttons {
@@ -173,6 +178,3 @@
     display: none;
   }
 }
-
-
-

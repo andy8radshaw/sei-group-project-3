@@ -15,7 +15,7 @@ const GroupShowInformation = ({ member, currentlyDisplayed, group, members, phot
             <hr />
             <div className="columns is-full">
               <div className="column is-5">
-                <p className="subtitle group-title">Created by</p>
+                <p className="subtitle group-title">Chief Hikr:</p>
                 <Link to={`/profiles/${group.createdMember._id}`} className="media">
                   <div className="media-left">
                     <figure className="image is-64x64">

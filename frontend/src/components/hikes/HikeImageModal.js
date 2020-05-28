@@ -9,13 +9,17 @@ class HikeImageModal extends React.Component {
     return (
       <div className={this.props.isModalActive ? "modal is-active" : "modal"}>
         <div className="modal-background"></div>
-        <div className="modal-content">
+        <div className="modal-content ">
         
-          <Carousel>
+          <Carousel
+            dynamicHeight={true}
+            showThumbs={false}
+            infiniteLoop={true}
+          >
             {this.props.images.map(image => {
               return (
                 <div key={image}>
-                  <img className="index-image"src={image} alt="hiking location" />
+                  <img className="hike-show-image"src={image} alt="hiking location" />
                 </div>
               )
             })}

@@ -1,3 +1,4 @@
+
 @import '~bulma/bulma.sass';
 @import 'nav';
 @import 'hikes';
@@ -13,3 +14,7 @@
   padding-top: 0;
 }
 
+.modal-content {
+  width: 70vw;
+  max-height: 70vh;
+}
