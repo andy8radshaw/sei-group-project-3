@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon",
-    "seed": "node db/seeds.js"
+    "start": "node index.js",
+    "seed": "node db/seeds.js",
+    "build": "cd frontend && npm install && npm run build",
+    "develop": "nodemon"
   },
   "repository": {
     "type": "git",
