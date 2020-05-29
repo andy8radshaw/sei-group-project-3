@@ -110,7 +110,7 @@ mongoose.connect(
 
 
       const groupsWithUsers = groupData.map(group => {
-        return { ...group, createdMember: createdUsers[Math.floor(Math.random() * createdUsers.length)]._id }
+        return { ...group, createdMember: createdUsers[1]._id }
       })
 
       const hikes = await Hike.create(hikesWithUsers)
