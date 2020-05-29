@@ -98,7 +98,7 @@ mongoose.connect(
       console.log(`${createdUsers.length} Users created`)
 
       const hikesWithUsers = hikeData.map(hike => {
-        return { ...hike, user: createdUsers[Math.floor(Math.random() * createdUsers.length)]._id }
+        return { ...hike, user: createdUsers[1]._id }
       })
 
       // const numberOfMembers = []

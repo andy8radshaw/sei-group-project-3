@@ -1,5 +1,10 @@
 module.exports = [
   {
+    name: 'Ramblers Club',
+    description: 'A friendly bunch of London based hikr\'s who love to spend a Sunday once a month in a beautiful place for a good old fashioned ramble. Only thing required for events in this group - there MUST be a good pub at the end of the ramble that does a wicked roast. You in?',
+    headerImage: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2560&q=80'
+  },
+  {
     name: 'Social Hiking',
     description: 'This is a group for anyone interested in meeting like-minded people and socialising by participating in hiking adventures. All skill levels are welcome. We started this group to help people to get connected, travel together and explore amazing natural wonders. Looking forward to discovering best Europe\'s hidden gems with new friends!',
     headerImage: 'https://img.nzz.ch/2017/7/6/ddf47e21-1e94-4ced-b6df-b02ea6b6e547.jpeg?width=1120&height=746&fit=crop&quality=75&auto=webp'
@@ -34,7 +39,7 @@ module.exports = [
     description: 'Winter walking and snowshoeing are fantastic ways to appreciate the snowy landscapes at entirely your own pace.Nowadays, many villages, particularly in the Alps, boast large networks of specially prepared winter walking paths and/or designated snowshoeing trails. Neither activity requires any special skill or clothing; the only ‘difficulty’ is choosing which trail to explore! ',
     headerImage: 'https://images.unsplash.com/photo-1522230374146-a459b2d7fde9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
   }
-  
+
 
 
 ]
