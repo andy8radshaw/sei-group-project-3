@@ -220,7 +220,7 @@ class ProfileShow extends React.Component {
                     </form>
                   </div>
                 }
-                <p className="column">@{profile.username}</p>
+                <p className="">Username: @{profile.username}</p>
 
                 {isOwner(profile._id) && <p onClick={this.enableEdit} className="edit">{this.state.editTerm}</p>}
               </figure>
@@ -257,7 +257,7 @@ class ProfileShow extends React.Component {
                 <h1 className="subtitle column is-full">About me...</h1>
                 {this.state.edit && <p onClick={this.enableEditBio} className="edit-bio">Edit bio</p>}
                 {this.state.showBio && <div>
-                  <p className="bio">
+                  <p className="bio section">
                     {profile.bio}
                   </p></div>}
                 {!this.state.showBio &&

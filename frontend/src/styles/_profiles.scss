@@ -1,13 +1,14 @@
 .background-profile {
-  height: 94.25vh;
-  background-image: url("https://images.unsplash.com/photo-1536334916155-dd9f850d6d73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.185), rgba(0, 0, 0, 0.198)),
-    url("./assets//profile-page.jpeg");
+  height: 100%;
+  // background-image: url("https://images.unsplash.com/photo-1536334916155-dd9f850d6d73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80");
+  // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.185), rgba(0, 0, 0, 0.198)),
+  //   url("./assets//profile-page.jpeg");
   // background-color: rgba(32, 178, 171, 0.479);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 5% 10% 2%;
+  background-color: rgba(22, 99, 95, 0.479);
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  padding: 5% 5% 2%;
 }
 
 .profile-index-title {
@@ -22,131 +23,132 @@
 }
 
 .is-ancestor {
-  max-height: 80vh;
-  overflow: scroll;
+//   max-height: 80vh;
+//   overflow: scroll;
 
-  .profile-top {
-    max-height: 35vh;
-    overflow: scroll;
-  }
+//   .profile-top {
+//     max-height: 35vh;
+//     overflow: scroll;
+//   }
 
-  .groups {
-    max-height: 28.8vh;
-    overflow: scroll;
-  }
-  .fav {
-    max-height: 30vh;
-    overflow: scroll;
-  }
+//   .groups {
+//     max-height: 28.8vh;
+//     overflow: scroll;
+//   }
+//   .fav {
+//     max-height: 30vh;
+//     overflow: scroll;
+//   }
 
-  .bio-box {
-    min-height: 20vh;
-    .bio {
-      max-height: 100px;
-      overflow: scroll;
-    }
-  }
+//   .bio-box {
+//     min-height: 20vh;
+//     .bio {
+//       max-height: 100px;
+//       overflow: scroll;
+//     }
+//   }
 
-  .completed {
-    max-height: 50vh;
-    width: 23vw;
-    overflow: scroll;
-  }
+//   .completed {
+//     max-height: 50vh;
+//     width: 23vw;
+//     overflow: scroll;
+//   }
 
-  background: unset;
+//   background: unset;
   box-shadow: none;
 
-  // @media (max-width: 375) {
-  //   width: 50vw;
-  // }
+//   // @media (max-width: 375) {
+//   //   width: 50vw;
+//   // }
+background-color: rgba(0, 0, 0, 0);
 
   h1 {
     font-family: "Amatic SC", cursive;
     font-size: 40px;
-    text-shadow: 0 0 10px #000000;
-    color: #ffffff;
+    // text-shadow: 0 0 10px ;
+    color: #000000;
   }
 
-  p {
-    color: white;
-  }
-  .is-child {
-    background-color: rgba(62, 65, 62, 0.548);
-  }
+//   p {
+//     color: white;
+//   }
+//   .is-child {
+//     background-color: rgba(22, 99, 95, 0.479);
+//   }
 
-  .profile-top {
-    text-align: center;
-    img {
-      width: 150px;
-    }
-  }
+//   .profile-top {
+//     text-align: center;
+//     img {
+//       width: 150px;
+//     }
+//   }
 
-  .no-group,
-  .edit,
-  .edit-bio-btn,
-  .no-hikes,
-  .explore-hikes {
-    color: rgb(255, 241, 52);
-    font-weight: 400;
-  }
-  .add-name {
-    margin-top: 30px;
-    margin-left: 10px;
-    width: 100x;
+//   .no-group,
+//   .edit,
+//   .edit-bio-btn,
+//   .no-hikes,
+//   .explore-hikes {
+//     color: rgb(255, 241, 52);
+//     font-weight: 400;
+//   }
+//   .add-name {
+//     margin-top: 30px;
+//     margin-left: 10px;
+//     width: 100x;
 
-    .fullname {
-      background-color: rgb(225, 241, 199);
-      border: none;
-    }
+//     .fullname {
+//       background-color: rgb(225, 241, 199);
+//       border: none;
+//     }
 
-    .name-btn {
-      font-size: 18px;
-      border: none;
-      background-color: unset;
-    }
-  }
+//     .name-btn {
+//       font-size: 18px;
+//       border: none;
+//       background-color: unset;
+//     }
+//   }
 
-  .edit-bio {
-    position: absolute;
-    margin-left: 10%;
-    margin-top: 30px;
-    color: rgb(255, 241, 52);
-    font-weight: 400;
-    width: 80px;
-    font-size: 16px;
-    text-align: center;
-  }
+//   .edit-bio {
+//     position: absolute;
+//     margin-left: 10%;
+//     margin-top: 30px;
+//     color: rgb(255, 241, 52);
+//     font-weight: 400;
+//     width: 80px;
+//     font-size: 16px;
+//     text-align: center;
+//   }
 
-  .edit-bio-btn {
-    text-align: center;
-  }
+//   .edit-bio-btn {
+//     text-align: center;
+//   }
 
-  .textarea {
-    margin-left: 30px;
-  }
+//   .textarea {
+//     margin-left: 30px;
+//   }
 
-  .image-upload {
-    margin: 20px 0px;
-    background-color: unset;
-  }
+//   .image-upload {
+//     margin: 20px 0px;
+//     background-color: unset;
+//   }
 
-  .remove {
-    background-color: rgba(251, 152, 149, 0.609);
-    color: white;
-    border-radius: 10px;
-    border: none;
-    font-size: 12px;
-    text-align: center;
-    padding: 3px 5px;
-    margin-top: 30px;
-  }
-  .explore-hikes {
-    margin-left: 10px;
-  }
+//   .remove {
+//     background-color: rgba(251, 152, 149, 0.609);
+//     color: white;
+//     border-radius: 10px;
+//     border: none;
+//     font-size: 12px;
+//     text-align: center;
+//     padding: 3px 5px;
+//     margin-top: 30px;
+//   }
+//   .explore-hikes {
+//     margin-left: 10px;
+//   }
 
-  .group-image {
-    width: 200px;
-  }
+//   .group-image {
+//     width: 200px;
+//   }
 }
 
 .profile-list {
