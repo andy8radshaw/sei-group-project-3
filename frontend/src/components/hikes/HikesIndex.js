@@ -120,7 +120,7 @@ class HikesIndex extends React.Component {
             })}
           </div>
         </section>
-        <section className={`${this.state.hideGrid ? 'section Hike-grid is-hidden' : 'section Hike-grid'}`}>
+        <section className={`${this.state.hideGrid ? 'section Hike-grid is-hidden' : 'Hike-grid'}`}>
           <div className="container">
             <div className="columns is-multiline">
               {this.filteredHikes().map(hike => {
