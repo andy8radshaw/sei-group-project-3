@@ -65,25 +65,13 @@ class HikesIndex extends React.Component {
               className="input is-primary is-rounded"
               name="search"
               type="text"
-              placeholder="Search for a Hike, Country, Season or Difficulty..."
+              placeholder="Search for hike, place, season or difficulty..."
               onChange={this.handleChange}
-              // value={this.state.searchTer}
+              // value={this.state.search}
             />
           </div>
 
           <div className="view-change buttons field has-addons">
-            <p className="control list-view-button">
-              <button
-                className="button"
-                name="showList"
-                onClick={this.handleViewChange}>
-                <span className="icon is-small">
-                  <i
-                    className="fas fa-list"
-                  ></i>
-                </span>
-              </button>
-            </p>
             <p className="control">
               <button
                 className="button"
@@ -92,6 +80,18 @@ class HikesIndex extends React.Component {
                 <span className="icon is-small">
                   <i
                     className="fas fa-th"
+                  ></i>
+                </span>
+              </button>
+            </p>
+            <p className="control list-view-button">
+              <button
+                className="button"
+                name="showList"
+                onClick={this.handleViewChange}>
+                <span className="icon is-small">
+                  <i
+                    className="fas fa-list"
                   ></i>
                 </span>
               </button>
@@ -120,7 +120,7 @@ class HikesIndex extends React.Component {
             })}
           </div>
         </section>
-        <section className={`${this.state.hideGrid ? 'section Hike-grid is-hidden' : 'Hike-grid'}`}>
+        <section className={`${this.state.hideGrid ? 'section Hike-grid is-hidden' : 'section Hike-grid'}`}>
           <div className="container">
             <div className="columns is-multiline">
               {this.filteredHikes().map(hike => {

@@ -8,20 +8,21 @@ const GroupCard = ({ group, members } ) => {
       <div className="column is-full">
 
         <div className="columns">
-          <img src={group.headerImage} alt={`pic ${group.name}`} className="column group-header-image" />
+          <img src={group.headerImage} alt={`pic ${group.name}`} className="column is-one-quarter index-image" />
           <div className="column columns is-multiline">
             <div className="column is-full columns is-multiline">
               <h1 className="subtitle column is-full group-title">{group.name}</h1>
-              { members.length > 1 &&
+              {/* { members.length > 1 &&
                 <p className="column is-full"><i className="fas fa-users"></i>
                 &nbsp;{members.length} hikrs</p> 
-              }
+              } */}
               <div>
                 <figure className="column">
                   <img src={group.createdMember.profileImage} alt={group.createdMember.username} className="group-list-image" />
                   <div>
                     <p><strong>Group Chief</strong>: @{group.createdMember.username} </p>
-                    <p className="group-profile-link"><Link to={`/profiles/${group.createdMember._id}`}>See profile</Link></p>
+                    {/* <p className="group-profile-link"><Link to={`/profiles/${group.createdMember._id}`}>See profile</Link></p> */}
+                    {/* <p onClick={handleGoToProfile} className="group-profile-link">See profile</p> */}
                   </div>
 
                 </figure>

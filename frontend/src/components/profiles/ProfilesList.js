@@ -6,7 +6,7 @@ const ProfilesList = (props) => {
   return (
     <div className="column is-full">
       <Link to={`/profiles/${props._id}`}>
-        <div className="columns profile-list">
+        <div className="columns profile-list box">
           {props.profileImage && <img src={props.profileImage} alt="profileImage" className="column list-image" />}
           {!props.profileImage && <img src={defaultImage} alt="default" className="column is-one-quarter is-mobile list-image" />}
           <div className="column columns is-multiline">

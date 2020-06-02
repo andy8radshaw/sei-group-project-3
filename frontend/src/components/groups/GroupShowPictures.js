@@ -43,7 +43,7 @@ const GroupShowPictures = ({ images, name, handleDeletePhoto, currentlyDisplayed
             name="images"
           />
         }
-       
+      
       </div>
     
   )

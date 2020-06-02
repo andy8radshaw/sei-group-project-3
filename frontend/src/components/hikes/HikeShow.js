@@ -27,19 +27,28 @@ class HikeShow extends React.Component {
     user: '',
     hikeIsFav: false
   }
-  //! USER ABOVE IS ACTUALLY THE CURRENT USERS ARRAY OF FAVOURITE HIKES!
+  //! USER ABOVE IN STATE IS ACTUALLY AN ARRAY OF THE CURRENT USERS FAVOURITE HIKES!
 
   async componentDidMount() {
     try {
       const hikeId = this.props.match.params.id
       const res = await getSingleHike(hikeId)
-      const userId = await getUserId()
-      const user = await getUser(userId)
-      this.setState({ hike: res.data, user: user.data.favoritedHikes },
-        () => {
-          this.getAverageRating()
-          this.checkHikeFavorite()
-        })
+      const loggedIn = await isAuthenticated() 
+
+      if (!loggedIn) {
+        this.setState({ hike: res.data, user: '' },
+          () => {
+            this.getAverageRating()
+          })
+      } else {
+        const userId = await getUserId()
+        const user = await getUser(userId)
+        this.setState({ hike: res.data, user: user.data.favoritedHikes },
+          () => {
+            this.getAverageRating()
+            this.checkHikeFavorite()
+          })
+      }
     } catch (err) {
       console.log(err)
     }
@@ -88,11 +97,11 @@ class HikeShow extends React.Component {
       )
       const favId = favArr.filter(arr => arr[1] === hikeId)
       const id = (favId.flatMap(item => item))
-      
+
       await removeHikeRequest(userId, linkName, id[0])
       const user = await getUser(userId)
       this.setState({ user: user.data.favoritedHikes, hikeIsFav: false })
-      
+
     } catch (err) {
       console.log(err)
     }
@@ -186,8 +195,8 @@ class HikeShow extends React.Component {
             </h1>
             <h1>Time the hike takes: {hike.timeToComplete}</h1>
             <h1>Distance: {hike.distance}</h1>
-            
-            <h1>Average Rating: 
+
+            <h1>Average Rating:
               <ReactStars
                 count={5}
                 size={12}

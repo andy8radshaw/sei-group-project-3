@@ -20,7 +20,7 @@ class ProfilesIndex extends React.Component {
   }
 
   handleChange = (event) => {
-    this.setState({[event.target.name]: event.target.value})
+    this.setState({ [event.target.name]: event.target.value })
 
   }
 
@@ -35,26 +35,35 @@ class ProfilesIndex extends React.Component {
 
   render() {
     return (
-      <section className="section">
-        <div className="container">
-          <h1 className="title">The Hikr Community</h1>
-          <div className="field">
-            <div className="control">
-              <input
-                className="input is-primary"
-                name="search"
-                type="text"
-                placeholder="Search for a Hikr"
-                onChange={this.handleChange}
-                // value={this.state.searchTerm}
-              />
+      <>
+        <section className="hero is-primary">
+          <div className="hero-body profiles-index-hero">
+            <div className="container has-text-centered">
+              <h1 className="title profile-index-title">The Hikr Community</h1>
+              <h1 className="subtitle profile-index-subtitle">find out more about your fellow hikrs</h1>
             </div>
           </div>
-          <div className="columns is-multiline">
-            {this.filteredNames().map(profile => <ProfilesList key={profile._id} {...profile} />)}
+        </section>
+        <section className="section ProfilesIndex">
+          <div className="container">
+            <div className="field">
+              <div className="control">
+                <input
+                  className="input is-primary"
+                  name="search"
+                  type="text"
+                  placeholder="Search for a Hikr"
+                  onChange={this.handleChange}
+                // value={this.state.searchTerm}
+                />
+              </div>
+            </div>
+            <div className="columns is-multiline">
+              {this.filteredNames().map(profile => <ProfilesList key={profile._id} {...profile} />)}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </>
     )
   }
 

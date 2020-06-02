@@ -15,6 +15,8 @@ class GroupIndex extends React.Component {
       this.props.history.push('/notfound')
     }
   }
+
+
   render() {
     const { groups } = this.state
     if (!groups) return null

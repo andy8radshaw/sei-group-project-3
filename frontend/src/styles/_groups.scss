@@ -17,19 +17,22 @@ $link: $grey-dark;
       }
     }
   }
+  .index-image {
+    object-fit: cover;
+  }
   .box {
     margin: 0 2%;
     min-width: 95%;
-    .group-header-image {
-      height: auto;
-      width: auto;
-      max-height: 400px;
-      max-width: 400px;
-      @media (max-width: 375px) {
-        max-height: 90%;
-        max-width: 90%;
-      }
-    }
+    // .group-header-image {
+    //   height: auto;
+    //   width: auto;
+    //   max-height: 400px;
+    //   max-width: 400px;
+    //   @media (max-width: 375px) {
+    //     max-height: 90%;
+    //     max-width: 90%;
+    //   }
+    // }
     .group-title {
       font-family: "Amatic SC", cursive;
       font-size: 30px;

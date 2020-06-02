@@ -17,11 +17,8 @@ const GroupShowEvents = ({ events, group, currentlyDisplayed, handleEventDelete,
     <div 
       className="Event container"    
         style={{ 
-          minHeight: 500,
+
           display: `${currentlyDisplayed === 'events' ? 'block' : 'none' }`,
-          marginTop: 20,
-          marginLeft: "auto",
-          marginRight: "auto"
         }}
       >
       {events.map(item => {
@@ -149,8 +146,6 @@ const GroupShowEvents = ({ events, group, currentlyDisplayed, handleEventDelete,
                 </div>
               </div>
             </div>
-          
-           
             <div className="buttons is-right">
               {!isInGroup(item.participants) &&
                 <button 
