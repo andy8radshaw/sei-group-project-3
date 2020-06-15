@@ -1,4 +1,4 @@
-# Project 4 - Hikr
+# Project 3 - Hikr
 
 Table of Contents:
 
@@ -13,6 +13,14 @@ Table of Contents:
 - Future Content and Improvements
 
 ## Project Overview
+
+Project 3 was my first experience of building a full stack application as part of a group. After a short amount of discussion we came up with the idea of building HIKR, a social app for users to add, share and review their favourite hikes, as well as organise groups with associated activities. 
+
+You will find the completed project here: https://hikrrr.herokuapp.com/
+
+The first step after the getting the initial ideas down was to create a basic wireframe for the look of each page and also how users may flow through the app. 
+
+![](/frontend/src/styles/assets/readme-images/hikr-wireframe.png)
 
 
 ## Brief
