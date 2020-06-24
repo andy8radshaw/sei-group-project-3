@@ -134,13 +134,19 @@ Another feature added was the 'Add Favourite' button. For this button to work we
 
 ### **HikeCreate / HikeUpdate forms**
 
-INFO ABOUT HIKE FORMS HERE
+The HikeCreate and HikeUpdate forms were created using the same HikeForm component. With the HikeUpdate feature I just had to prepopulate the form with the correct data. For the selection boxes such as Difficulty and Seasons I decided to use the react-select package to add in a slick selection process. 
 
 ---
 ## Day 8 & 9 -  Styling tweaks & SEED CITY!
 
 Day 8 & 9 was mostly spent styling and adding the correct fonts to buttons and titles etc. Myself and Purvi were working closely to make sure that the form pages, index pages and show pages were inline with each other and branded in uniform. We also spent a good amount of time building up the seeds database for the hikes - taking a few countries each and adding 5-10 hikes for the area. We originally thought we may be able to use an external API to get the data for this but upon searching we found it hard to find one with the info we required. 
 
+---
+## Deployment
+
+The app was then deployed through Heroku. Initially we linked up the front-end to the back-end and tested locally, and once we were happy with this then hit the deploy button on Heroku through the CLI. Once the app was then deployed online we seeded in the relevent data.
+
+---
 # Final Product
 
 ### Home Page:
@@ -177,7 +183,7 @@ A big win for me personally was that we created a very slick website which has r
 I personally continued to use Trello to keep on top of my to-do list and this worked very well throughout the project. 
 
 ### **Blockers:**
-One of the main blockers for this project would be the sometimes lacking in communication between team members. Due to one of the team being located in Tokyo, Japan, there was a large time difference so it was often hard to keep track of where we were all at. Communication between team members I believe is a crucial aspect of programming during a project, especially in this early stage of our programming careers. 
+One of the main blockers for this project would be the sometimes lacking in communication between team members. Due to one of the team being located in a completely different time-zone, it was often hard to keep track of where we were all at. Which meant that in the Groups section, adding more features was prioritised when styling was needed ready for deployment. Communication between team members I believe is a crucial aspect of programming during a project, especially in this early stage of our programming careers. 
 
 If we had clearer communiction we would have been able to help reign in the amount of features being added and make sure that upon deployment we we're all together finished as a team. 
 
@@ -189,6 +195,16 @@ If we had clearer communiction we would have been able to help reign in the amou
 - When searching on the home page this is not pre populated on the index page (it errors if it is populated)
 - Not so much a bug, but Purvi and myself are not happy with the styling of the Groups section
 
+# Future Content and Improvements
+- Finish the styling in Groups section
+- I would like the hikes to have more details about the specific route - but this will take a lot of research! GPS co-ordinates etc
+- More interactive map feature on both the hike index and hike show pages
+- better error handling and error page
+
+
+---
+---
+---
 
 # Original planning notes below:
 
