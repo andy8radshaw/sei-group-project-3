@@ -16,7 +16,12 @@ Table of Contents:
 
 Project 3 was my first experience of building a full stack application as part of a group. After a short amount of discussion we came up with the idea of building HIKR, a social app for users to add, share and review their favourite hikes, as well as organise groups with associated activities. 
 
-You will find the completed project here: https://hikrrr.herokuapp.com/
+## You will find the completed project here: https://hikrrr.herokuapp.com/
+
+Please feel free to log in using the following credentials:
+
+email: andy@email\
+password: pass
 
 ![](frontend/src/styles/assets/readme-images/hikr-home-cropped.png)
 
@@ -71,7 +76,7 @@ You will find the completed project here: https://hikrrr.herokuapp.com/
 
 ## Approach taken
 
-## Day 1
+## Day 1 - Planning
 The first step after deciding the nature of the app and getting our initial ideas down on paper, was to work on the routes, models and controllers we would need to make sure the app functions how we planned (you can see the original planning for this at the bottom of this README). We had settled on three models in total - The User, The Hike, and the Group. After this we created a basic wireframe for the look of each page and also how users may flow through the app. 
 
 ![](frontend/src/styles/assets/readme-images/hikr-wireframe.png)
