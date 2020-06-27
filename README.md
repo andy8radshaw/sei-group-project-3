@@ -22,7 +22,7 @@ You will find the completed project here: https://hikrrr.herokuapp.com/
 
 ## The Brief
 
-* **Build a full-stack application** by making your own backend and your own front-end
+* **Build a full-stack application** by making your own back-end and your own front-end
 * **Use an Express API** to serve your data from a Mongo database
 * **Consume your API with a separate front-end** built with React
 * **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models
@@ -32,7 +32,7 @@ You will find the completed project here: https://hikrrr.herokuapp.com/
 --- 
 ## Technologies Used
 
-### Backend:
+### Back-end:
 - Node.js
 - Mongodb
 - Express
@@ -77,27 +77,31 @@ The first step after deciding the nature of the app and getting our initial idea
 ![](frontend/src/styles/assets/readme-images/hikr-wireframe.png)
 
 
-After this we put together a plan as to how we would divide the work between the three of us, using Trello to keep on top of things throughout the project. Beacuse we all wanted to have a hand in creating both backend and frontend, we decided that it was logical and a good idea to take on building the model schema's, routes, and controllers split with one each. This would then lead us onto building the frontend in the same way. Purvi took on the User's, Kuriko took on the Groups, and I was challenged with building the Hikes.  
+After this we put together a plan as to how we would divide the work between the three of us, using Trello to keep on top of things throughout the project. Beacuse we all wanted to have a hand in creating both back-end and frontend, we decided that it was logical and a good idea to take on building the model schema's, routes, and controllers split with one each. This would then lead us onto building the frontend in the same way. Purvi took on the User's, Kuriko took on the Groups, and I was challenged with building the Hikes.  
 
 
-## Backend - Day 2 & 3
+## Back-end - Day 2 & 3
 
 The Hike model was created using Mongoose and ended up being less complicated than originally planned. Initally I had planned on having the main hike schema along with 3 embedded schemas (image upload, review, and rating) and two virtual schemas linked with the User Schema (user favorites, and user completed). Eventually the embedded schema's were whittled down to just the one that would take care of the reviews and ratings together and the images updloaded into the main schema's array. 
 
 ![](frontend/src/styles/assets/readme-images/hikr-hike-schema.png)
 
-For the Hike model I created the controllers for all CRUD actions as well as image upload and create and delete reviews. These were tested with Insomnia to make sure the backend was receiving the correct authorisations and sending the correct responses with exactly the right amount of info to build the front end. 
+For the Hike model I created the controllers for all CRUD actions as well as image upload and create and delete reviews. These were tested with Insomnia to make sure the back-end was receiving the correct authorisations and sending the correct responses with exactly the right amount of info to build the front end. 
 
-As a team, we were able to build our backends at a similar pace helping each other as we went, which meant we could all then spend a good amount of time on day 3 testing and making sure the embedded and virtual schema's were populated with the correct information. 
+As a team, we were able to build our back-ends at a similar pace helping each other as we went, which meant we could all then spend a good amount of time on day 3 testing and making sure the embedded and virtual schema's were populated with the correct information. 
 
 ---
-## Frontend - Day 4, 5, 6, 7 & 8
+## Front-end - Day 4, 5, 6, 7 & 8
 
-For the frontend we initially pair coded to get the React installed with the dependencies we would all initially require to get going on our own sections. We continued with the same sections as before, so I was in charge of the HikesIndex, HikeShow, HikeCreate and HikeUpdate pages. 
+For the front-end we initially pair coded to get the React installed with the dependencies we would all initially require to get going on our own sections. We continued with the same sections as before, so I was in charge of the HikesIndex, HikeShow, HikeCreate and HikeUpdate pages. 
 
-Our plan with the frontend was to hit MVP stage by the end of day 5. We decided to use Bulma for the styling throughout. With this in mind, we wanted to try and build out each component with using the Bulma framework where possible, to make less work towards the end of the build on general styling so we would have more time to either add more features or neaten up styling and seed more data. 
+For testing we used HTTP-proxy-middleware to link the back-end with the front-end. This enabled us to work on both parts and to quickly make and see changes without having to go through the build process each time. We also used Nodemon for hot-reloading of the browser which again increased our efficiency while building out the front-end
 
-I built the frontend in class based React. For each section, it was a case of first making sure everything is hooked up and getting/showing the data in the console before then adding the components to show it. 
+Our plan with the front-end was to hit MVP stage by the end of day 5. For the API requests we used AXIOS and built a separate library of all the request functions that were then imported into each page.
+
+We decided to use Bulma for the styling throughout. With this in mind, we wanted to try and build out each component with using the Bulma framework where possible, to make less work towards the end of the build on general styling so we would have more time to either add more features or neaten up styling and seed more data. 
+
+I built the front-end in class based React. For each section, it was a case of first making sure everything is hooked up and getting/showing the data in the console before then adding the components to show it. 
 
 ### **HikesIndex**
 
@@ -108,7 +112,7 @@ For the Hike index page I wanted the user to have the choice of three views - Ca
 ### handleViewChange - screenshot:
 ![](frontend/src/styles/assets/readme-images/hikr-viewchange.png)
 
-As for the Map view - I decided to use React-Mapbox-GL. I am very happy with the final result of this. It works well on both desktop and Mobile however, I had one bug that I was unable to fix and is on my list of imporvements for V2 of the app. When the user would click on a pin to expand to the larger info pin it would not always be at the front of the page and would often be overlapped by the smaller pins around it due to the order that the page renders the array of Hikes. To solve this I would add a function that when a user clicked on the smaller pin, it would remove the clicked hike from the array and pop it back on to the end therefore bringing it to the front of the list. 
+As for the Map view - I decided to use React-Mapbox-GL. I am very happy with the final result of this. It works well on both desktop and Mobile however, I had one bug that I was unable to fix and is on my list of improvements for V2 of the app. When the user would click on a pin to expand to the larger info pin it would not always be at the front of the page and would often be overlapped by the smaller pins around it due to the order that the page renders the array of Hikes. To solve this I would add a function that when a user clicked on the smaller pin, it would remove the clicked hike from the array and pop it back on to the end therefore bringing it to the front of the list. 
 
 
 ### Map view - screenshot:
@@ -183,17 +187,19 @@ A big win for me personally was that we created a very slick website which has r
 I personally continued to use Trello to keep on top of my to-do list and this worked very well throughout the project. 
 
 ### **Blockers:**
-One of the main blockers for this project would be the sometimes lacking in communication between team members. Due to one of the team being located in a completely different time-zone, it was often hard to keep track of where we were all at. Which meant that in the Groups section, adding more features was prioritised when styling was needed ready for deployment. Communication between team members I believe is a crucial aspect of programming during a project, especially in this early stage of our programming careers. 
+One of the main blockers for this project was the mapbox-GL popups in that they would not show in front of all other pins once selected. I tried multiple options to get this working on day 8 including -  adding a new class to the selected pin which would increase the z-index however, this didn't work because of the positioning of the elements. I also tried using :before and :after in CSS but again, this failed to work. Unfortunately it was too late in the day to get this working correctly and I have had the idea for V2 of the app to try to slice the selected hike from the array and pop it back onto the end thus causing a re-render of the page but with the hike at the front as it will be last in the list...
 
-If we had clearer communiction we would have been able to help reign in the amount of features being added and make sure that upon deployment we we're all together finished as a team. 
+another blocker, and this is more of a general blocker than a code blocker, would be the sometimes lacking in communication between team members. Due to one of the team being located in a completely different time-zone, it was often hard to keep track of where we were all at and if there were any problems occuring. For example, on day 8 which we had put aside for cleaning up and styling - the Groups section was having issues that myeslf and Purvi, weren't aware of because of this lack of communication. I believe communication between team members is a crucial aspect of programming during a project, especially in this early stage of our programming careers. 
+
+If we had clearer communiction we would have been able to help reign in the amount of features being added to the groups section, help with fixing bugs and make sure that upon deployment we were all together finished as a team. 
 
 
 # Bugs
-- Updating a hike works except for the adding the images isnt prepopulated
+- Updating a hike works except for the adding the images isnt pre-populated
 - Error handling on forms
 - HikeIndex map view isnt showing the large popup correctly above the others on the page
 - When searching on the home page this is not pre populated on the index page (it errors if it is populated)
-- Not so much a bug, but Purvi and myself are not happy with the styling of the Groups section
+- Not so much a bug, but I am not so happy with the styling of the Groups section
 
 # Future Content and Improvements
 - Finish the styling in Groups section
@@ -219,7 +225,7 @@ Kuriko IWAI - Groups
 
 ## Name: Hikr
 
-## Backend:
+## Back-end:
 
 ### Database
 
