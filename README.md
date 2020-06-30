@@ -23,6 +23,13 @@ Please feel free to log in using the following credentials:
 email: andy@email\
 password: pass
 
+## Code Installation:
+- Clone or download the repo
+- Install Yarn in terminal with command:  `npm i`
+- Start server with terminal command: `npm run start`
+
+---
+
 ![](frontend/src/styles/assets/readme-images/hikr-home-cropped.png)
 
 ## The Brief
