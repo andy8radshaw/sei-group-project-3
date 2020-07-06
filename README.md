@@ -25,7 +25,7 @@ password: pass
 
 ## Code Installation:
 - Clone or download the repo
-- Install Yarn in terminal with command:  `npm i`
+- Install NPM in terminal with command:  `npm i`
 - Start server with terminal command: `npm run start`
 
 ---
