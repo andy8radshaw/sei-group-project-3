@@ -9,7 +9,8 @@ Table of Contents:
 - Wins and Blockers
 - Bugs
 - Future Content and Improvements
-- Original README planning notes
+- Key Learnings
+- Original planning notes
 
 
 ## Overview
@@ -24,9 +25,12 @@ email: andy@email\
 password: pass
 
 ## Code Installation:
-- Clone or download the repo
-- Install NPM in terminal with command:  `npm i`
-- Start server with terminal command: `npm run start`
+Clone or download the repo then in your  Terminal run the following commands:
+- Install dependencies `npm i`
+- Start the database `mongod --dbpath ~/data/db`
+- Start the back-end server using nodemon `npm run develop`
+- Change into front-end folder `cd frontend`
+- Run the frontend `npm run start`
 
 ---
 
@@ -86,10 +90,16 @@ password: pass
 ## Day 1 - Planning
 The first step after deciding the nature of the app and getting our initial ideas down on paper, was to work on the routes, models and controllers we would need to make sure the app functions how we planned (you can see the original planning for this at the bottom of this README). We had settled on three models in total - The User, The Hike, and the Group. After this we created a basic wireframe for the look of each page and also how users may flow through the app. 
 
+Wireframe:
 ![](frontend/src/styles/assets/readme-images/hikr-wireframe.png)
 
 
-After this we put together a plan as to how we would divide the work between the three of us, using Trello to keep on top of things throughout the project. Beacuse we all wanted to have a hand in creating both back-end and frontend, we decided that it was logical and a good idea to take on building the model schema's, routes, and controllers split with one each. This would then lead us onto building the frontend in the same way. Purvi took on the User's, Kuriko took on the Groups, and I was challenged with building the Hikes.  
+After this we put together a plan as to how we would divide the work between the three of us, using Trello to keep on top of things throughout the project. Beacuse we all wanted to have a hand in creating both back-end and frontend, we decided that it was logical and a good idea to take on building the model schema's, routes, and controllers split with one each. This would then lead us onto building the frontend in the same way. Purvi took on the User's, Kuriko took on the Groups, and I was challenged with building the Hikes.
+
+Trello Board:
+![](frontend/src/styles/assets/readme-images/hikr-trello.png)
+
+At the very start of the project we had agreed as a group that we would do a daily morning stand up to discuss any issues or blockers we were having. As this was our first experience of using GitHub on a joint project, we decided that for the initial few days we would do pushes and pulls all together as a group. This was to aviod and fix any potential merging conflicts that we may encounter. In general we were communicating throughout each day using Slack and Zoom.
 
 
 ## Back-end - Day 2 & 3
@@ -201,7 +211,7 @@ I personally continued to use Trello to keep on top of my to-do list and this wo
 ### **Blockers:**
 One of the main blockers for this project was the mapbox-GL popups in that they would not show in front of all other pins once selected. I tried multiple options to get this working on day 8 including -  adding a new class to the selected pin which would increase the z-index however, this didn't work because of the positioning of the elements. I also tried using :before and :after in CSS but again, this failed to work. Unfortunately it was too late in the day to get this working correctly and I have had the idea for V2 of the app to try to slice the selected hike from the array and pop it back onto the end thus causing a re-render of the page but with the hike at the front as it will be last in the list...
 
-another blocker, and this is more of a general blocker than a code blocker, would be the sometimes lacking in communication between team members. Due to one of the team being located in a completely different time-zone, it was often hard to keep track of where we were all at and if there were any problems occuring. For example, on day 8 which we had put aside for cleaning up and styling - the Groups section was having issues that myeslf and Purvi, weren't aware of because of this lack of communication. I believe communication between team members is a crucial aspect of programming during a project, especially in this early stage of our programming careers. 
+Another blocker, and this is more of a general blocker than a code blocker, would be the sometimes lacking in communication between team members. Due to one of the team being located in a completely different time-zone, it was often hard to keep track of where we were all at and if there were any problems occuring. For example, on day 8 which we had put aside for cleaning up and styling - the Groups section was having issues that myeslf and Purvi, weren't aware of because of this lack of communication. I believe communication between team members is a crucial aspect of programming during a project, especially in this early stage of our programming careers. 
 
 If we had clearer communiction we would have been able to help reign in the amount of features being added to the groups section, help with fixing bugs and make sure that upon deployment we were all together finished as a team. 
 
@@ -217,7 +227,14 @@ If we had clearer communiction we would have been able to help reign in the amou
 - Finish the styling in Groups section
 - I would like the hikes to have more details about the specific route - but this will take a lot of research! GPS co-ordinates etc
 - More interactive map feature on both the hike index and hike show pages
-- better error handling and error page
+- Better error handling and error page
+
+# Key Learnings
+Working in a group on this project has helped me learn a lot about how I communicate with others and just how important it is to keep talking, especially so early on in our careers. There were some moments where this was lacking towards the end of this project, however, we were able to stay focussed, continue with our plans and make a beautiful product. 
+
+Another thing I took away from the project is being able to push myself further outside of my comfort zone more often. I am sometimes guilty of making decisions that are lower risk but a number of times on this project I had broken code because of trying to add a more challenging feature. At these moments I really learnt that the tech community is a wonderful thing to be able to lean on to get answers whether thats through my immediate peers or through social communities on stack overflow etc.
+
+And finally, docs docs docs... always read the docs!
 
 
 ---
