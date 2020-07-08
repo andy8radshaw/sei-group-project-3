@@ -94,12 +94,12 @@ Wireframe:
 ![](frontend/src/styles/assets/readme-images/hikr-wireframe.png)
 
 
-After this we put together a plan as to how we would divide the work between the three of us, using Trello to keep on top of things throughout the project. Beacuse we all wanted to have a hand in creating both back-end and frontend, we decided that it was logical and a good idea to take on building the model schema's, routes, and controllers split with one each. This would then lead us onto building the frontend in the same way. Purvi took on the User's, Kuriko took on the Groups, and I was challenged with building the Hikes.
+After this we put together a plan as to how we would divide the work between the three of us, using Trello to keep on top of things throughout the project. Because we all wanted to have a hand in creating both back-end and frontend, we decided that it was logical and a good idea to take on building the model schema's, routes, and controllers split with one each. This would then lead us onto building the frontend in the same way. Purvi took on the User's, Kuriko took on the Groups, and I was challenged with building the Hikes.
 
 Trello Board:
 ![](frontend/src/styles/assets/readme-images/hikr-trello.png)
 
-At the very start of the project we had agreed as a group that we would do a daily morning stand up to discuss any issues or blockers we were having. As this was our first experience of using GitHub on a joint project, we decided that for the initial few days we would do pushes and pulls all together as a group. This was to aviod and fix any potential merging conflicts that we may encounter. In general we were communicating throughout each day using Slack and Zoom.
+At the very start of the project we had agreed as a group that we would do a daily morning stand up to discuss any issues or blockers we were having. As this was our first experience of using GitHub on a joint project, we decided that for the initial few days we would do pushes and pulls all together as a group. This was to avoid and fix any potential merging conflicts that we may encounter. In general we were communicating throughout each day using Slack and Zoom.
 
 
 ## Back-end - Day 2 & 3
