@@ -17,7 +17,7 @@ Table of Contents:
 
 Project 3 was my first experience of building a full stack application as part of a group. After a short amount of discussion we came up with the idea of building HIKR, a social app for users to add, share and review their favourite hikes, as well as organise groups with associated activities. 
 
-## You will find the completed project here: https://hikrrr.herokuapp.com/
+## You will find the completed project here: **[Hikr](https://hikrrr.herokuapp.com/)**
 
 Please feel free to log in using the following credentials:
 
@@ -104,7 +104,7 @@ At the very start of the project we had agreed as a group that we would do a dai
 
 ## Back-end - Day 2 & 3
 
-The Hike model was created using Mongoose and ended up being less complicated than originally planned. Initally I had planned on having the main hike schema along with 3 embedded schemas (image upload, review, and rating) and two virtual schemas linked with the User Schema (user favorites, and user completed). Eventually the embedded schema's were whittled down to just the one that would take care of the reviews and ratings together and the images updloaded into the main schema's array. 
+The Hike model was created using Mongoose and ended up being less complicated than originally planned. Initially I had planned on having the main hike schema along with 3 embedded schemas (image upload, review, and rating) and two virtual schemas linked with the User Schema (user favorites, and user completed). Eventually the embedded schema's were whittled down to just the one that would take care of the reviews and ratings together and the images uploaded into the main schema's array. 
 
 ![](frontend/src/styles/assets/readme-images/hikr-hike-schema.png)
 
