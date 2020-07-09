@@ -10,7 +10,6 @@ Table of Contents:
 - Bugs
 - Future Content and Improvements
 - Key Learnings
-- Original planning notes
 
 
 ## Overview
@@ -125,7 +124,7 @@ We decided to use Bulma for the styling throughout. With this in mind, we wanted
 
 I built the front-end in class based React. For each section, it was a case of first making sure everything is hooked up and getting/showing the data in the console before then adding the components to show it. 
 
-### **HikesIndex**
+### **HikesIndex Page**
 
 For the Hike index page I wanted the user to have the choice of three views - Card, List and Map view. Initially for MVP I had decided on just adding the List and Map views. It was important that if the user had searched for a particular hike or location that if they switched views then this filter would still be there. This was very simply achieved by having the three views either showing or hidden depending on what the user had chosen. 
 
@@ -144,7 +143,7 @@ MVP for HikesIndex was hit on day 4 and on day 6 I added the card view which was
 
 ---
 
-### **HikeShow**
+### **HikeShow Page**
 
 For HikeShow there was a lot more complexity to add to the page. Features for the page included the user having the ability to update the hike(if they were the owner/creator), add/delete a review and rating, add Images to the gallery and add/remove the hike to their favorites. Therefore there was a lot of pre planning to decide the MVP requirements and what was nice to have. I decided that the adding favorites, and adding images would be a nice to have feature and to focus on the reviews and rating to make sure that they worked well. On day 7 I used the react-rating-stars component to add a nice hover-over and selection of the rating instead of the radio selection that worked for MVP
 
@@ -158,7 +157,7 @@ Another feature added was the 'Add Favourite' button. For this button to work we
 
 ---
 
-### **HikeCreate / HikeUpdate forms**
+### **HikeCreate / HikeUpdate Form Pages**
 
 The HikeCreate and HikeUpdate forms were created using the same HikeForm component. With the HikeUpdate feature I just had to prepopulate the form with the correct data. For the selection boxes such as Difficulty and Seasons I decided to use the react-select package to add in a slick selection process. 
 
@@ -235,115 +234,3 @@ Working in a group on this project has helped me learn a lot about how I communi
 Another thing I took away from the project is being able to push myself further outside of my comfort zone more often. I am sometimes guilty of making decisions that are lower risk but a number of times on this project I had broken code because of trying to add a more challenging feature. At these moments I really learnt that the tech community is a wonderful thing to be able to lean on to get answers whether thats through my immediate peers or through social communities on stack overflow etc.
 
 And finally, docs docs docs... always read the docs!
-
-
----
----
----
-
-# Original planning notes below:
-
-## sei-group-project-3
-Main repo for SEI Group Project 3
-
-Responsibilities:\
-Andy Bradshaw - Hikes\
-Purvi Trivedi - Login, Register, Hikr Profiles\
-Kuriko IWAI - Groups
-
-
-## Name: Hikr
-
-## Back-end:
-
-### Database
-
-- Users
-- Groups
-- Hikes
-
-
-### Third party Info
-- Fake users ? faker? 
-- Hikes ? 
-
-### Models
-User
-- username
-- email
-- password
-- profile image
-- biography
-- completed hikes - embedded
-- favourited hikes - embedded
-(group members, user added images, user created hike)
-
-Group
-- group name
-- group members - referenced (to user)
-- events/meetups - form (add new event - date, time, selection of hikes) - referenced
-- imageHeader - 
-- user added images - embedded
-- group messages - embedded
-
-Hike
-- name
-- location (lat/long)
-- country
-- description
-- distance
-- difficulty rating - 
-- time to complete
-- images 
-- user added images - referenced (to user)
-- comments - embedded
-- stars out of 5 - embedded
-- approprite seasons
-- user created hike - referenced (to user)
-
-
-### Controllers
-
-User 
-- Create user
-- Read SingleUser
-- Update
-- Delete
-
-Groups
-- Create Group
-- Read
-- Update
-- Delete
-- comment/messages
-- add new event
-
-Hikes
-- Create 
-- Find by Id
-- Update
-- Delete
-- Comment
-- Add Favourite
-- Add image
-
-
-### Routes
-
-/hikes - index page GET/POST
-/hikes/:id - hike show page GET/PUT/DELETE
-/hikes/:id/comments - hike comments page POST
-/hikes/:id/comments/:id - delete comment DELETE/PUT
-
-/register - POST
-/login - POST
-
-/groups groups index page GET/POST
-/groups/:id group profile page GET/PUT/DELETE
-/groups/:id/messages - groups messages page POST
-/groups/:id/messages/:id - delete/edit messages DELETE/PUT
-/groups/:id/events index and create events GET/POST    
-/groups/:id/events/:id GET/PUT/DELETE
-
-/profiles  idex of users GET
-/profiles/:username users profile pages GET/POST/PUT/DELETE
